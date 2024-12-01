@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PlayerClient",
+            "request": "launch",
+            "mainClass": "network.PlayerClient",
+            "projectName": "CodeRacingP2PTest_fa7641e4"
+        },
+        {
+            "type": "java",
+            "name": "Host",
+            "request": "launch",
+            "mainClass": "network.Host",
+            "projectName": "CodeRacingP2PTest_fa7641e4"
+        },
+        {
+            "type": "java",
             "name": "Host",
             "request": "launch",
             "mainClass": "network.Host",
