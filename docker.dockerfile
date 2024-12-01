@@ -2,11 +2,11 @@
 FROM openjdk:21.0.1-jdk-slim
 
 # Çalışma dizinini ayarla
-WORKDIR /CodeRacingP2PTest
+WORKDIR /Main
 
 # Uygulama kodunu kopyala
-COPY . /CodeRacingP2PTest
+COPY . .
 
-
+RUN javac -d out $(find . -name "*.java")
 # Çalıştırılabilir JAR dosyasını çalıştır
-CMD ["java", "-jar", "target/Host.java"]
+CMD ["java", "-cp", "out", "com.example.Host"]
