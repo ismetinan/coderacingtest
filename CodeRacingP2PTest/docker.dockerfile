@@ -1,12 +1,12 @@
-# Temel Java 17 imajı
+# Temel Java 21 imajı
 FROM openjdk:21.0.1-jdk-slim
 
 # Çalışma dizinini ayarla
-WORKDIR /Main
+WORKDIR /CodeRacingP2PTest
 
 # Uygulama kodunu kopyala
-COPY . .
+COPY . /CodeRacingP2PTest
 
 RUN javac -d out $(find . -name "*.java")
 # Çalıştırılabilir JAR dosyasını çalıştır
-CMD ["java", "-cp", "out", "com.example.Host"]
+CMD ["java", "-cp", "out", "network.Host"]
