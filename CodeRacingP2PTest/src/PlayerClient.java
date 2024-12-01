@@ -1,6 +1,5 @@
-package network;
 
-import game.GameState;
+
 import java.io.*;
 import java.net.*;
 import java.util.Scanner;
