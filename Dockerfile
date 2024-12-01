@@ -1,5 +1,5 @@
 # Base Image
-FROM openjdk:21.0.1-jdk-slim
+FROM openjdk:21-jdk-slim
 
 # Uygulama dizinine git (projenin kök dizini)
 WORKDIR /CodeRacing
