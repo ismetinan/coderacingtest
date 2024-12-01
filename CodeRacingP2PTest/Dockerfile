@@ -1,12 +1,15 @@
-# Temel Java 21 imajı
+# Base Image
 FROM openjdk:21.0.1-jdk-slim
 
-# Çalışma dizinini ayarla
-WORKDIR /CodeRacingP2PTest
+# Uygulama dizinine git (projenin kök dizini)
+WORKDIR /CodeRacing
 
-# Uygulama kodunu kopyala
-COPY . /CodeRacingP2PTest
+# Proje dosyalarını kopyala
+COPY . .
 
-RUN javac -d out $(find . -name "*.java")
-# Çalıştırılabilir JAR dosyasını çalıştır
+# Java dosyalarını derle ve çıktıları 'out' dizinine gönder
+RUN mkdir -p out \
+    && javac -d out $(find ./src -name "*.java")
+
+# Uygulamayı başlat
 CMD ["java", "-cp", "out", "network.Host"]
