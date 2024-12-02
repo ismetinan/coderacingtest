@@ -3,7 +3,7 @@ import java.net.*;
 import java.util.*;
 
 public class Host {
-    private static final int PORT = 12345;
+    private static final int PORT = 8080;
     private final List<PlayerHandler> players = new ArrayList<>();
 
     public static void main(String[] args) {
