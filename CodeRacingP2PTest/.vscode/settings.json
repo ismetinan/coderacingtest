@@ -2,7 +2,7 @@
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\Ege\\Desktop\\gson-2.8.2.jar"
+        "lib/gson-2.8.8.jar",
+        "lib/*"
     ]
 }
