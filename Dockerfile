@@ -17,4 +17,4 @@ RUN wget https://repo1.maven.org/maven2/com/google/code/gson/gson/2.8.8/gson-2.8
 RUN javac -cp ".:/CodeRacing/lib/gson-2.8.8.jar:/CodeRacing/lib/*" CodeRacingP2PTest/src/*.java
 
 # Run the application
-CMD ["java", "-cp", ".:/CodeRacing/lib/gson-2.8.8.jar:/CodeRacing/lib/*", "Host"]
+CMD ["java", "-cp", ".:/CodeRacing/CodeRacingP2PTest/lib/gson-2.8.8.jar:/CodeRacing//CodeRacingP2PTestlib/*", "Host"]
