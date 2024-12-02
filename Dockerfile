@@ -4,7 +4,8 @@ FROM openjdk:21-jdk-slim
 RUN apt-get update && apt-get install -y wget
 
 # Set the working directory in the container
-WORKDIR /CodeRacing
+WORKDIR /CodeRacing/CodeRacingP2PTest
+
 
 # Copy the project files into the container
 COPY . .
