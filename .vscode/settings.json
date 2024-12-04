@@ -1,7 +1,8 @@
 {
     "java.project.referencedLibraries": [
         "/Users/azizemreayan/Desktop/javafx-sdk-23.0.1/lib/*.jar",
-        "/Users/azizemreayan/Desktop/**/*.jar"
+        "/Users/azizemreayan/Desktop/**/*.jar",
+        "CodeRacingP2PTest/lib/gson-2.8.2.jar"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

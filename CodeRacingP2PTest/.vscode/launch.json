@@ -9,6 +9,20 @@
             "name": "PlayerClient",
             "request": "launch",
             "mainClass": "PlayerClient",
+            "projectName": "CodeRacingP2PTest_ed4aada2"
+        },
+        {
+            "type": "java",
+            "name": "Host",
+            "request": "launch",
+            "mainClass": "Host",
+            "projectName": "CodeRacingP2PTest_ed4aada2"
+        },
+        {
+            "type": "java",
+            "name": "PlayerClient",
+            "request": "launch",
+            "mainClass": "PlayerClient",
             "projectName": "CodeRacingP2PTest_ac33bed0"
         },
         {
